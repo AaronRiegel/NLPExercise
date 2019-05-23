@@ -7,7 +7,8 @@ public class Main {
 
     /*
     Word: strings separated by spaces
-    Sentence: sequence of tokens which ends with a ".", "?", or "!" followed by a space OR sequence of tokens which ends with a ".", "?", or "!" followed by a "\"" and a space
+    Sentence: sequence of tokens which ends with a ".", "?", or "!" followed by a space OR sequence of tokens
+    which ends with a ".", "?", or "!" followed by a "\"" and a space
     Paragraph: if the line is blank
      */
 
@@ -53,7 +54,7 @@ public class Main {
             if(line.equals(""))
                 paragraphCount++;
 
-            if(!(line.equals(""))) {
+            else {
 
                 String[] words = line.split("\\s+");
                 wordList.addAll(Arrays.asList(words));
